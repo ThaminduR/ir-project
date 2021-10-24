@@ -1,0 +1,14 @@
+flask/flaskApp/
+data/pm-si-data.json
+data/pm-data.json
+flask/static/bg.jpg
+scrape-scripts/spiders/__pycache__/
+scrape-scripts/__pycache__/
+
+# Remove after finalizing. 
+scrape-scripts/spiders/pm_spider.py
+flask/run.py
+flask/templates/index.html
+elasticsearch/mapping.json
+elasticsearch/index_data.py
+flask/static/index.css
