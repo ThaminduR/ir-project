@@ -1,4 +1,4 @@
-# Scrapy settings for irp project
+# Scrapy settings for irpScrape project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,17 +7,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'irp'
+BOT_NAME = 'irpScrape'
 
-SPIDER_MODULES = ['irp.spiders']
-NEWSPIDER_MODULE = 'irp.spiders'
+SPIDER_MODULES = ['irpScrape.spiders']
+NEWSPIDER_MODULE = 'irpScrape.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'irp (+http://www.yourdomain.com)'
+#USER_AGENT = 'irpScrape (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'irp.middlewares.IrpSpiderMiddleware': 543,
+#    'irpScrape.middlewares.IrpscrapeSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'irp.middlewares.IrpDownloaderMiddleware': 543,
+#    'irpScrape.middlewares.IrpscrapeDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'irp.pipelines.IrpPipeline': 300,
+#    'irpScrape.pipelines.IrpscrapePipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

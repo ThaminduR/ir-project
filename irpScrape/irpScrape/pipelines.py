@@ -8,6 +8,6 @@
 from itemadapter import ItemAdapter
 
 
-class IrpPipeline:
+class IrpscrapePipeline:
     def process_item(self, item, spider):
         return item
