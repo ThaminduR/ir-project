@@ -31,8 +31,6 @@ This project contains four parts
 ## Flask Application
 
 - A simple flask application was created for the searching. 
-- TODO: Rule based classification and more complex query preprocessing.
-
 
 # Setting Up and Running the Project
 
@@ -43,4 +41,7 @@ This project contains four parts
 3. Creating Index - Start elasticsearch and create an index using the `mapping.json` given in elasticsearch folder.
 4. Add Data to Index - Run the `index_dat.py` script to add data into the index.
 5. Start the Flask App - Run `python run.py` inside the flask folder to start the flask app.
+
+
+Note: The data crawled from the parliment website is used only for educational purposed only.
 

@@ -44,7 +44,7 @@
   "mappings": {
     "properties": {
       "civil": {
-        "type": "text",
+        "type": "keyword",
         "analyzer": "si_analyzer"
       },
       "dob": {
@@ -52,7 +52,7 @@
         "format": "dd-mm-yyy"
       },
       "electoral": {
-        "type": "text",
+        "type": "keyword",
         "analyzer": "si_analyzer"
       },
       "email": {
@@ -64,10 +64,14 @@
         "analyzer": "si_analyzer"
       },
       "party": {
-        "type": "text",
+        "type": "keyword",
         "analyzer": "si_analyzer"
       },
       "religion": {
+        "type": "keyword",
+        "analyzer": "si_analyzer"
+      },
+      "committees": {
         "type": "text",
         "analyzer": "si_analyzer"
       }
