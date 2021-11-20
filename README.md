@@ -14,6 +14,15 @@ This project contains four parts
 - Missing data values were replaced by `N/A`.
 - Data files are located in the data/ directory with the stats related to missing information.
 - Scraping scripts are located in the scrapy directory.
+- Scraped data contains following fields,
+    1. Name
+    2. Date of birth 
+    3. Civil status
+    4. Religion
+    5. Party
+    6. Electoral district
+    7. Email
+    8. Served committees
 
 ## Transliterate data into Sinhala
 
