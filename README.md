@@ -31,7 +31,16 @@ This project contains four parts
 ## Flask Application
 
 - A simple flask application was created for the searching. 
-- TODO: Template rendering needs to be improved.
 - TODO: Rule based classification and more complex query preprocessing.
 
+
+# Setting Up and Running the Project
+
+- Install the required packages using requirements.txt.
+
+1. Data Scraping - In the irpScrape folder, run `scrapy crawl pm` to crawl the data from the parliment website.
+2. Translation - Run the `translate.py` script in the translate-scripts folder.
+3. Creating Index - Start elasticsearch and create an index using the `mapping.json` given in elasticsearch folder.
+4. Add Data to Index - Run the `index_dat.py` script to add data into the index.
+5. Start the Flask App - Run `python run.py` inside the flask folder to start the flask app.
 

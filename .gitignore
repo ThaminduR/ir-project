@@ -5,11 +5,3 @@ irpScrape/data/pm-data.json
 flask/static/bg.jpg
 irpScrape/irpScrape/spiders/__pycache__/
 irpScrape/irpScrape/__pycache__/
-
-# Remove after finalizing. 
-irpScrape/irpScrape/spiders/pm_spider.py
-flask/run.py
-flask/templates/index.html
-elasticsearch/mapping.json
-elasticsearch/index_data.py
-flask/static/index.css
