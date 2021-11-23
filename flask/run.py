@@ -78,7 +78,7 @@ class QueryProcessor:
     # Remove priority context identifier tokens from the query.
     def removeContexIdentifiers(self, query, tokens):
         for token in tokens:
-            query = query.replace(token," ")
+            query = query.replace(token,"")
         print(query)
         return query
 
@@ -92,10 +92,9 @@ class QueryProcessor:
             }
         else:
             body =  {
-                "query": {
+                "query": {                                    
                     "multi_match": {
                         "query": query,
-                        "operator": "and"
                     }
                 }
             }
@@ -110,7 +109,7 @@ class QueryProcessor:
                 }
             }
         else:
-            body =  {
+            body =  {         
                 "query": {
                     "multi_match": {
                         "query": query,
@@ -146,12 +145,11 @@ def home():
             body = ppdquery
 
         response = es.search(index=index_name, body=body)
-        count = response['hits']['total']['value']
-        print(response)
+
         pm_list = []
         for result in response['hits']['hits']:
             pm_list.append(result['_source'])
-
+        count = len(pm_list)
         results = {'count':count, 'data':pm_list, 'query':query}
 
     # return jsonify(response)

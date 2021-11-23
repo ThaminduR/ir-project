@@ -5,3 +5,6 @@ irpScrape/data/pm-data.json
 flask/static/bg.jpg
 irpScrape/irpScrape/spiders/__pycache__/
 irpScrape/irpScrape/__pycache__/
+elasticsearch/test-mapping-with-keywords.json
+flask/test-run-bool-query.py
+flask/test-run-year-boost.py

@@ -79,9 +79,15 @@
                     <div class="result-header">
                       <div class="row">
                         <div class="col-lg-6">
+                          {% if results['count'] == 1 %}
                           <div class="records">
                             Showing: <b>{{results['count']}}</b> result
                           </div>
+                          {% else %}
+                          <div class="records">
+                            Showing: <b>{{results['count']}}</b> results
+                          </div>
+                          {% endif %}
                         </div>
                       </div>
                     </div>
