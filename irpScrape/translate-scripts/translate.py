@@ -1,7 +1,7 @@
 import json
 from mtranslate import translate
 
-json_file = open("pm-data.json", "r", encoding="utf-8")
+json_file = open("../irScrap/data/pm-data.json", "r", encoding="utf-8")
 data = json.load(json_file)
 
 people = []
@@ -24,5 +24,5 @@ for person in data:
   print("{:0.2f}% Completed".format((count/225)*100))
   
 
-with open('data/pm-si-data.json', 'w', encoding='utf8') as f:
+with open('../irScrap/data/pm-si-data.json', 'w', encoding='utf8') as f:
     f.write(json.dumps(people, ensure_ascii=False))

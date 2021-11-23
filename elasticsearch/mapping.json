@@ -44,15 +44,15 @@
   "mappings": {
     "properties": {
       "civil": {
-        "type": "keyword",
+        "type": "text",
         "analyzer": "si_analyzer"
       },
       "dob": {
-        "type": "date",
-        "format": "dd-mm-yyy"
+        "type": "text",
+        "analyzer": "standard"
       },
       "electoral": {
-        "type": "keyword",
+        "type": "text",
         "analyzer": "si_analyzer"
       },
       "email": {
@@ -64,16 +64,29 @@
         "analyzer": "si_analyzer"
       },
       "party": {
-        "type": "keyword",
+        "type": "text",
         "analyzer": "si_analyzer"
       },
       "religion": {
-        "type": "keyword",
+        "type": "text",
         "analyzer": "si_analyzer"
       },
       "committees": {
         "type": "text",
         "analyzer": "si_analyzer"
+      },
+      "career": {
+        "type": "text",
+        "analyzer": "si_analyzer"
+      }
+      ,
+      "name_en": {
+        "type": "text",
+        "analyzer": "en_analyzer"
+      },
+      "electoral_en": {
+        "type": "text",
+        "analyzer": "en_analyzer"
       }
     }
   }

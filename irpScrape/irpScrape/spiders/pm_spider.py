@@ -5,7 +5,7 @@ import json
 
 class PMSpider(scrapy.Spider):
     name = "pm"
-    stats = {"name":0, "dob":0, "civil":0, "religion":0, "party":0, "electoral":0, "email":0, "committees":0, "total_row_count":0}
+    stats = {"name":0, "dob":0, "civil":0, "religion":0, "party":0, "electoral":0, "email":0, "committees":0, "career":0, "total_row_count":0}
     id_list = []
     people = []
     pms_lk = 'https://www.parliament.lk/members-of-parliament/index2.php?option=com_members&task=all&tmpl=component&letter=%s'
@@ -74,7 +74,11 @@ class PMSpider(scrapy.Spider):
         if(len(committees)!=0):
             person["committees"] = committees
 
-        for att in ["dob", "civil", "religion", "party", "electoral", "email", "committees"]:
+        career = response.xpath('//div[@class="top-mp-detail-3"]/div/pre/text()').extract()
+        if(len(career)!=0):
+            person["career"] = career[0].split("\r\n")
+
+        for att in ["dob", "civil", "religion", "party", "electoral", "email", "committees", "career"]:
             try:
                 person[att]
             except:

@@ -4,7 +4,7 @@ from time import sleep
 
 client = Elasticsearch("localhost:9200")
 
-json_file = open("irpScrape/data/pm-si-data.json", "r", encoding="utf-8")
+json_file = open("../irpScrape/data/pm-si-data.json", "r", encoding="utf-8")
 
 data = json.load(json_file)
 
@@ -22,7 +22,7 @@ try:
     resp = helpers.bulk(
         client,
         data,
-        index="lk-pm",
+        index="lk-pm-en",
         doc_type="_doc"
     )
 
@@ -43,7 +43,7 @@ query_all = {
 sleep(2)
 
 resp = client.search(
-    index="lk-pms",
+    index="lk-pm-en",
     body=query_all
 )
 
