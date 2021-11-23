@@ -10,7 +10,7 @@ This project contains four parts
 4. Flask Application
 
 ## Data Scraping
-- Data Source: https://www.parliament.lk/
+- Data Source: https://www.parliament.lk/en/members-of-parliament/directory-of-members
 - Missing data values were replaced by `N/A`.
 - A single missing value in the date of birth field was filled manually.
 - Data files are located in the data/ directory with the stats related to missing information.
@@ -44,7 +44,7 @@ This project contains four parts
 
 - A simple flask application was created for the searching. Retreived data is displayed in a table.
 
-![Directory of Members of Parliment](images\ui.png)
+<img src="images\ui.png">
 
 # Features
 
