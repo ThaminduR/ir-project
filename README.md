@@ -62,7 +62,7 @@ This project contains four parts
 - elasticsearch - Contains settings and mapping json for the index creation and python script for updating index with the data.
 - flask - Contains code for the flask app and app.py contains the query processing logic.
 - images - Images added in the README.md
-- irpScrape - Contains scrapy scripts, spiders and scraped data and translated data.
+- irpScrape - Contains scrapy scripts, spiders and scraped data and translated data. `stats.josn` file in the data folder contains information about missing values of the data.
 # Setting Up and Running the Project
 
 - Install the required packages using requirements.txt.
