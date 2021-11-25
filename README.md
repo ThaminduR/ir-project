@@ -24,6 +24,7 @@ This project contains four parts
     6. Electoral district
     7. Email
     8. Served committees
+    9. Career
 
 ## Transliterate data into Sinhala
 
