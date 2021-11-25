@@ -26,7 +26,7 @@ This project contains four parts
     8. Served committees
     9. Career
 
-## Transliterate data into Sinhala
+## Translate data into Sinhala
 
 - Scraped data was transliterated into Sinhala using `mtranslate` pip package (`pip install mtranslate`).
 - `N/A` values were replaced by `දත්ත නොමැත` ("No Data" in Sinhala).
